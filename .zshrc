@@ -71,7 +71,7 @@ source $ZSH/oh-my-zsh.sh
 export DEFAULT_USER="$(whoami)"
 
 prompt_dir() {
-  prompt_segment blue black "${PWD##*/}"
+  prompt_segment blue white "${PWD##*/}"
 }
 
 # User configuration
@@ -103,6 +103,16 @@ prompt_dir() {
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+
+
+##
+##	ALIASES SECTION
+##
+
+alias mig='php artisan migrate'
+alias res='php artisan migrate:reset'
 alias pu='git add . ; git ci -m "automatic push" ; git push origin HEAD'
 alias rb='git pull --rebase origin master ; git push origin HEAD -f'
+alias ..='cd ..'
+alias ~='cd ~'
 
