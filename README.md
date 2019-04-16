@@ -20,5 +20,9 @@ git clone 'dircolorsdb repo'
 
 eval `dircolors /path/to/dircolorsdb`
 
+# Terminals to install
+
+Xterm2: https://www.iterm2.com/downloads.html
+
 
 
