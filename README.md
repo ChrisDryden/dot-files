@@ -3,6 +3,13 @@
 .bashrc and .zsh files
 
 
+# installation guide for Windows Terminal
+
+open regedit.exe and go to Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor
+
+Add the following String Value "AutoRun" : |Home Path| terminal-dot-files\alias.bat
+
+
 # installation guide for Linux Terminals
 
 sudo apt-get update -y 
