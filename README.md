@@ -3,6 +3,17 @@
 .bashrc and .zsh files
 
 
+# Mac Installation Guide
+
+clone repo and run the following command:
+
+```sh install.sh```
+
+installation script installs:
+ - iTerm2
+ - vim
+ - OhMyZsh Powerlevel10K
+
 # installation guide for Windows Terminal
 
 open regedit.exe and go to Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor
