@@ -8,8 +8,7 @@ export ZSH="/Users/chrisdryden/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
-POWERLEVEL9K_MODE="awesome-patched"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -109,6 +108,13 @@ prompt_dir() {
 ##
 ##	ALIASES SECTION
 ##
+
+export DEFAULT_USER="$(whoami)"
+
+prompt_dir() {
+  prompt_segment blue white "${PWD##*/}"
+}
+
 
 alias mig='php artisan migrate'
 alias res='php artisan migrate:reset'
