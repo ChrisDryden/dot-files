@@ -27,7 +27,12 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 
+Plugin 'tpope/vim-fireplace'
 
+" latex plugins
+"
+Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
+Plugin 'lervag/vimtex'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
@@ -38,15 +43,33 @@ Plugin 'mxw/vim-jsx'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" latex configurations
+" Preview autoupdate
+autocmd Filetype tex setl updatetime=1
+" Autocomplete environment
+autocmd FileType tex imap \\ <F5>
+
+
 " window movement
 nnoremap <S-Tab> <c-w>
 tnoremap <S-Tab> <c-w>
 
+" stopping capital W
+"
+command! W :w
 
 " escape remap
 "
 imap jj <Esc>
 
+" insert new lines
+"
+"
+map <Enter> o<ESC>
+map <S-Enter> O<ESC>
+
 
 " Python indentation specifications
+
+
 
