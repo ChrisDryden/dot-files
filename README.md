@@ -13,6 +13,11 @@ installation script installs:
  - iTerm2
  - vim
  - OhMyZsh Powerlevel10K
+ 
+ Post installation checklist:
+ - Make Mac dock automatically disappear
+ - Make Menu header automatically disapper
+ 
 
 # installation guide for Windows Terminal
 
